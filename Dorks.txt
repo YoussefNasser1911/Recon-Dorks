@@ -1,0 +1,100 @@
+1. `intitle:"bug bounty"` — pages with “bug bounty” in the title
+2. `intext:"bug bounty program"` — pages mentioning “bug bounty program”
+3. `inurl:"bug-bounty"` — URLs containing “bug-bounty”
+4. `inurl:"bugbounty"` — URLs containing “bugbounty”
+5. `intitle:"Bug Bounty Program"` — formal program landing pages
+6. `intext:"vulnerability disclosure policy"` — pages describing disclosure policies
+7. `intitle:"vulnerability disclosure"` — policy pages in the title
+8. `inurl:"vulnerability-disclosure"` — URLs with vulnerability-disclosure
+9. `intext:"responsible disclosure"` — wording for responsible disclosure pages
+10. `intitle:"responsible disclosure"` — pages titled with responsible disclosure
+11. `inurl:"disclosure-policy"` — disclosure policy URLs
+12. `site:hackerone.com "programs"` — HackerOne program listing
+13. `site:bugcrowd.com "programs"` — Bugcrowd program listing
+14. `site:yeswehack.com "program"` — YesWeHack program pages
+15. `intext:"report a vulnerability"` — pages that explain how to report issues
+16. `intext:"report security"` — security-reporting instructions
+17. `inurl:"/.well-known/security.txt"` — presence of security.txt (standard contact file)
+18. `intext:"security.txt" "Contact"` — security.txt references and contacts
+19. `filetype:pdf "vulnerability disclosure"` — PDF disclosure policies
+20. `filetype:pdf "bug bounty"` — PDF program documents / policies
+21. `intitle:"security policy" "bug bounty"` — security policy pages that mention bounties
+22. `intext:"security@*"` — pages showing security contact email
+23. `intext:"security team" "report"` — security team reporting instructions
+24. `intext:"accepts vulnerability reports"` — pages that accept reports
+25. `intext:"we run a bug bounty"` — company blog/news stating they run a program
+26. `"Bug Bounty" site:medium.com` — blog posts announcing programs on Medium
+27. `intitle:"Responsible Disclosure Policy" "report"` — direct disclosure instructions
+28. `inurl:"/security/bug-bounty"` — common path pattern for program pages
+29. `inurl:"/security/contact"` — security contact pages
+30. `inurl:"/security/policy"` — security policy pages
+31. `intitle:"security.txt" site:*` — find sites exposing security.txt
+32. `intext:"bounty program" "scope"` — program pages listing scope
+33. `intext:"scope" "bug bounty"` — scope definitions on program pages
+34. `"program scope" "bug bounty"` — explicit “program scope” wording
+35. `inurl:"/responsible-disclosure"` — standard responsible disclosure URL path
+36. `"vulnerability reporting" "contact"` — reporting + contact details
+37. `"disclosure coordinator" "security"` — pages naming disclosure coordinators
+38. `"security policy" "vulnerability"` — policy pages about vulnerabilities
+39. `site:github.com "security.txt" "https"` — repositories or pages referencing security.txt
+40. `intext:"we pay for" "vulnerabilities"` — pages that talk about paying for reports
+41. `intext:"bounty" "scope"` — mentions of bounties and what’s in scope
+42. `intitle:"Report a vulnerability" "security"` — “report a vulnerability” landing pages
+43. `"Vulnerability Disclosure Policy" site:*.gov` — government disclosure programs
+44. `"Vulnerability Disclosure Policy" site:edu` — academic institution policies
+45. `intext:"third-party bug bounty" "program"` — third-party program notices
+46. `inurl:"/security/bug-bounty-policy"` — explicit policy URL format
+47. `intext:"hackerone" "program"` — pages mentioning HackerOne programs
+48. `intext:"bugcrowd" "program"` — pages mentioning Bugcrowd programs
+49. `intitle:"security" "bug bounty"` — security pages that reference bounties in title
+50. `intext:"accepted vulnerability types" "bug bounty"` — pages that list accepted vuln types
+51. `site:* intitle:"admin login"` — pages with admin login in the title
+52. `inurl:/admin/login.php` — URLs containing PHP admin login paths
+53. `intitle:"dashboard" inurl:"/v1/"` — API dashboards in the title and URL
+54. `inurl:"/phpmyadmin/index.php"` — URLs containing phpMyAdmin index page
+55. `intitle:"Jenkins" inurl:8080` — Jenkins instances on common port 8080
+56. `filetype:sql "password"` — SQL database dumps containing password string
+57. `filetype:env "DB_PASSWORD"` — environment configuration files exposing database credentials
+58. `filetype:log "error"` — application log files containing error messages
+59. `filetype:ini inurl:php.ini` — accessible php.ini configuration files
+60. `filetype:json "private_key"` — JSON files containing private keys
+61. `inurl:/api/v1/ intitle:"index of"` — exposed API directory listings
+62. `site:*.target.com inurl:wp-content` — WordPress content directories on target subdomains
+63. `inurl:"swagger-ui.html"` — exposed Swagger API documentation pages
+64. `inurl:/graphiql` — accessible GraphiQL interface endpoints
+65. `filetype:yaml "openapi"` — OpenAPI specification files in YAML format
+66. `inurl:/.git "index of"` — exposed Git repository directories
+67. `filetype:phps site:*` — PHP source code files exposed as plain text
+68. `inurl:/wp-content/uploads/ "index of"` — open WordPress upload directory listings
+69. `filetype:bak inurl:web.config` — backup copies of web.config server files
+70. `filetype:inc "mysql_connect"` — include files containing database connection functions
+71. `site:s3.amazonaws.com "target"` — AWS S3 buckets linked to a target keyword
+72. `site:blob.core.windows.net "target"` — Azure Blob storage containers linked to a target
+73. `site:googleapis.com "target"` — Google Cloud storage assets linked to a target
+74. `filetype:xls "target" site:s3.amazonaws.com` — Excel spreadsheets containing target info on S3
+75. `inurl:/.aws/credentials` — exposed AWS credentials files
+76. `inurl:/composer.json` — Composer configuration files exposing PHP dependencies
+77. `inurl:/package.json` — Node.js package files exposing project dependencies
+78. `intitle:"Metabase"` — accessible Metabase business intelligence instances
+79. `inurl:/actuator/env` — Spring Boot Actuator environment endpoints
+80. `inurl:/v2/api-docs` — Springfox Swagger API documentation endpoints
+81. `filetype:conf "VirtualHost"` — Apache web server configuration files
+82. `filetype:log "access.log"` — web server access logs exposing requests
+83. `filetype:txt "robots.txt"` — robots.txt files hiding specific directories
+84. `inurl:/server-status` — Apache server status monitoring pages
+85. `filetype:cfg "password"` — configuration files containing plaintext passwords
+86. `intext:"Fatal error: Call to a member function"` — pages exposing PHP fatal errors and paths
+87. `intext:"SQL syntax error"` — pages reflecting explicit database syntax errors
+88. `intext:"Exception in thread"` — Java application exception stack traces
+89. `intext:"Warning: mysql_connect()"` — pages showing raw PHP database connection warnings
+90. `intext:"PostgreSQL query failed"` — pages exposing failed PostgreSQL queries
+91. `site:*.target.com intitle:"test"` — test domains or staging pages under a target
+92. `site:*.target.com inurl:"staging"` — staging environments under a target domain
+93. `site:*.target.com inurl:"dev"` — development environments under a target domain
+94. `intitle:"index of /" "backup"` — directory listings containing backup files
+95. `intitle:"index of" "secret"` — directory listings containing secret keywords
+96. `filetype:js "api_key="` — JavaScript files embedding hardcoded API keys
+97. `intext:"bearer" filetype:json` — JSON files containing bearer authorization tokens
+98. `filetype:txt "id_rsa"` — exposed SSH private keys in plaintext format
+99. `inurl:/api/v1/user` — common API endpoints handling user objects
+100. `site:pastebin.com "target"` — public code and text leaks related to a target
